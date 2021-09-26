@@ -1,5 +1,5 @@
-﻿import { Header } from "src/components/Header";
-import { Footer } from "src/components/Footer";
+﻿import { Footer } from "src/components/Footer";
+import { Header } from "src/components/Header";
 import { ReactNode } from "react";
 
 type Props = {
