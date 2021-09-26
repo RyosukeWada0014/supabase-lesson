@@ -1,8 +1,9 @@
-﻿import Image from "next/image";
+﻿import { VFC } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import logo from "public/logo.jpg";
 
-export const Header = () => {
+export const Header:VFC = () => {
   return (
     <header className="flex justify-center gap-4 py-6 text-gray-600 bg-gray-200 ">
       <Link href="/">
