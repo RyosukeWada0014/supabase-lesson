@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import type { NextPage } from "next";
 import { Auth, Button, IconLogOut, Typography } from "@supabase/ui";
 import { client } from "src/libs/supabase";
@@ -10,12 +10,12 @@ type Props = {
 
 const Container = (props: Props) => {
   const { user } = Auth.useUser();
-  
+
   if (user) {
     return (
       <div>
         <div className="flex justify-end mx-2 my-4">
-        <Typography.Text>Signed in: {user.email}</Typography.Text>
+          <Typography.Text>Signed in: {user.email}</Typography.Text>
           <Button
             size="medium"
             icon={<IconLogOut />}
