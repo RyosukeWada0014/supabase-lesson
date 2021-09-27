@@ -114,7 +114,7 @@ export const AddTitle: VFC<Props> = (props) => {
                       Cancel
                     </Button>
                   </div>
-                  <div>
+                  <div className="w-32 p-2">
                     <Button
                       block
                       type="default"
